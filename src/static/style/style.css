@@ -13,9 +13,21 @@ a:hover{
 }
 
 .container{
+    position: relative;
     width: 100%;
     margin: 0 auto;
     background-color: #f1f1f1;
+}
+
+.show{
+    position: absolute;
+    width: 20%;
+    height: 3rem;
+    top: 0.425rem;
+    left: 40%;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #555252;
 }
 
 .banner{
@@ -42,6 +54,7 @@ a:hover{
 }
 
 .banner p,
+.show p,
 .innerItem{
     font-size: 0.32rem;
     text-align: center;

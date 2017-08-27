@@ -1,14 +1,15 @@
+
 /**
  * 获取请求地址
  * @param  {[type]} key [description]
  * @return {[type]}     [URL]
  */
 function getApi(key){
-
     var apis = {};
 
     apis['POSITION'] = '/position';
-    apis['WEATHER'] = '/winters/重庆';
+    //天气预报接口
+    apis['WEATHER'] = '/winters/$';
 
     return apis[key]
 
@@ -36,13 +37,14 @@ function packReq(key, method, urlParams, payload){
     if (paramMap.length > 1) {
 
         req.url = '';
-        $.each(paramMap, function(index, val) {
+            for(i = 0; i< paramMap.length ; i++){
 
-            if (paramMap.length-1 === index) {return};
+                if (paramMap.length-1 !== i) {
+                    req.url += (paramMap[i] + urlParams[i]);
+            };
 
-            req.url += (val + urlParams[index]);
 
-        });
+        };
 
     };
 

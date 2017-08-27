@@ -1,7 +1,7 @@
 
 
 var fir_date = $('.fir-date'),
-    city = $('.city'),
+    cityName = $('.city'),
     quality = $('.quality'),
     temp = $('.temp'),
     weath = $$('.weath'),
@@ -13,9 +13,12 @@ var fir_date = $('.fir-date'),
     num = $('.num'),
     icon = $$('.icon'),
     shidu = $('.shidu'),
+    show = $('.show'),
     weatherItem = $$('.weatherItem'),
     mycanvas = $('.mycanvas');
 
+
+//获取时间
 function getDate() {
     var show_day = new Array('周日', '周一', '周二', '周三', '周四', '周五', '周六');
     var oDate = new Date();
@@ -40,3 +43,8 @@ function getDate() {
 }
 
 getDate();
+
+//canvas画曲线.. 时间不够了还没完成
+function draw(){
+
+}

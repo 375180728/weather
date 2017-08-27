@@ -8,17 +8,8 @@ module.exports = function(app, dirPath) {
         res.sendFile(dirPath + '/src/views/index.html');
     })
 
-    app.post('/position', function(req, res) {
-        console.log(req.body.Latitude);
-        var mapUrl = "http://api.map.baidu.com/geocoder/v2/";
 
-        res.json({
-            status: 1,
-            message: "success"
-        })
-    })
-
-
+    //将天气预报接口的信息拿到后端 再由前端的get请求来获取
     app.get('/winters/:city', function(req, res) {
         var options = {
                 hostname: 'www.sojson.com',
