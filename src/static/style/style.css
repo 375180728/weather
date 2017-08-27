@@ -1,0 +1,129 @@
+html,body,ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+}
+
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner a{
+    position: relative;
+    display: block;
+    margin-top: 2.3rem;
+    width: 16%;
+    float: left;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    z-index: 20;
+    outline: none;
+}
+
+.banner a:first-child{
+    margin-top: 2.9rem;
+    width: 20%;
+}
+
+.banner p,
+.innerItem{
+    font-size: 0.32rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #555;
+    line-height: 0.5rem;
+    color: #fff;
+}
+
+.split{
+    position: absolute;
+    left: 0px;
+    top: 1.5rem;
+    width: 0.03125rem;
+    height: 3.4375rem;
+    background: #444036;
+    filter: alpha(opacity=15);
+    opacity: 0.15;
+}
+
+.banner .fir-date,
+.banner .quality{
+    text-align: left;
+    margin: 0.1875rem 0 0 0.6875rem;
+    width: 100%;
+}
+
+.city{
+    color: #908c8c;
+    margin-bottom: 0.3125rem;
+}
+
+.num{
+    font-size: 0.75rem;
+    line-height: 1.0rem;
+    display: inline-block;
+    font-family: Arial;
+    text-shadow: 0.015625rem 0.015625rem 0.015625rem #555;
+}
+
+.title{
+    position: relative;
+    display: inline-block;
+}
+
+.title-sup,
+.title-sub{
+    display: block;
+    text-align: left;
+    font-style: normal;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.now{
+    text-align: center;
+}
+
+.info{
+    position: relative;
+}
+
+.icon{
+    text-align: center;
+}
+
+.sec-date{
+    margin-top: 1.35rem;
+}
+
+.inner{
+    width: 78%;
+    margin: 1rem auto;
+    overflow: hidden;
+
+}
+
+.innerItem{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.mycanvas{
+    width: 100%;
+}
+

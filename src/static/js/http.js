@@ -8,7 +8,7 @@ function getApi(key){
     var apis = {};
 
     apis['POSITION'] = '/position';
-    apis['WEATHER'] = '/weather';
+    apis['WEATHER'] = '/winters/重庆';
 
     return apis[key]
 

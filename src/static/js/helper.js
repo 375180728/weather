@@ -1,9 +1,11 @@
 // 工具类
 function $(selector) {
-    return document.querySelectorAll(selector);
+    return document.querySelector(selector);
 }
 
-
+function $$(selector) {
+    return document.querySelectorAll(selector);
+}
 
 // AJAX 异步方法
 function syncAction(method, data, url, callback) {
